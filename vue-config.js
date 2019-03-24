@@ -2,7 +2,7 @@
 	"eslintConfig": {
 		"root": true,
 		"env": {
-		  "node": true
+			"node": true
 		},
 		"extends": [
 			"plugin:vue/essential",
@@ -12,13 +12,28 @@
 			"parser": "babel-eslint"
 		},
 		"rules": {
-			"no-tabs": ["error",
+			"indent": [
+				"error",
+				4
+			],
+			"linebreak-style": [
+				"error",
+				"unix"
+			],
+			"no-tabs": [
+				"error",
 				{
-				"allowIndentationTabs": true
+					"allowIndentationTabs": true
 				}
 			],
-			"semi": ["error", "never"],
-			"quotes": ["error", "single"]
+			"semi": [
+				"error",
+				"never"
+			],
+			"quotes": [
+				"error",
+				"single"
+			]
 		}
 	}
 }
